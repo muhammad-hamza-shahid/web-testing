@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+</head>
+
+<body>
+    <form action="http://www.example.com/login.php" method="POST">
+
+        <fieldset >
+            <legend>Personal Details</legend>
+            <p>First Name
+                <input type="text" name="First Name" size="15" maxlength="20" required>
+                <br>
+                <br>
+                Last Name
+                <input type="" name="Last Name" size="15" maxlength="20" required>
+            </p>
+            <p>
+                Gender
+                <label><input type="radio" name="gender" checked value="m">Male</label>
+                <input id="male" type="radio" name="gender" value="f">
+                <label for="male">Female</label>
+
+            </p>
+            <p>
+                Date of Birth:
+                <input type="date" name="dob">
+            </p>
+            <p>
+                Nationality:
+                <select name="countries" id="" multiple>
+                    <option value="pakistan">Pakistan</option>
+                    <option value="india">India</option>
+                    <option value="canada">Canada</option>
+                    <option value="china">China</option>
+                    <option value="turkey">Turkey</option>
+                </select>
+
+            </p>
+        </fieldset>
+        <p>
+            Password
+            <input type="Password" name="Password" size="15" maxlength="30" required>
+        </p>
+        <p>
+            Re-Enter Password
+            <input type="password" name="password" value="" size="15" maxlength="30" required>
+        </p>
+        <p>
+            Interests:
+            <input type="checkbox" name="interest" value="men" id="">Men's Clothing
+            <input type="checkbox" name="interest" value="women" id="">Women's CLothing
+            <input type="checkbox" name="interest" value="acc" id="">Accessories
+            <input type="checkbox" name="interest" value="electronics" id="">Electronics
+        </p>
+        <p>
+            <textarea name="comments" id="" cols="30" rows="10">Enter the comments ...</textarea>
+        </p>
+        <p>Upload Profile Picture: </p>
+        <input type="file" name="dp" id="">
+        <br><br>
+        <input type="submit" value="Upload" name="" id="">
+        <input type="submit" name="" id="">
+    </form>
+
+</body>
+
+</html>
